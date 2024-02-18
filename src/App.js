@@ -16,7 +16,7 @@ import Checkout from "./components/Checkout";
 function App() {
   return (
     <div>
-      <BrowserRouter basename='/sonalika-ecommerce-app'>
+      <BrowserRouter basename='/SA-Global-App'>
         <Header />
         <Routes>
           <Route exact path="/" element={<Home />} />
