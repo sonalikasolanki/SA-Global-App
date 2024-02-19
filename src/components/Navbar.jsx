@@ -12,20 +12,21 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-info py-3 shadow-sm fixed-top">
       <div className="navbar-container ">
-        <div>
-          <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-            <li className="nav-item ">
-              <Link className="btn mt-2" aria-current="page" to="/">
-                <span style={{color: "white", fontWeight: "700"}}>Home</span>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="btn mt-2 " to="/product">
-              <span style={{color: "white", fontWeight: "700"}}>Products</span>
-              </Link>
-            </li>
-          </ul>
-        </div>
+      <div>
+  <ul className="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+    <li className="nav-item">
+      <Link className="btn mt-2 me-lg-3 me-0" aria-current="page" to="/">
+        <span style={{ color: "white", fontWeight: "700" }}>Home</span>
+      </Link>
+    </li>
+    <li className="nav-item">
+      <Link className="btn mt-2" to="/product">
+        <span style={{ color: "white", fontWeight: "700" }}>Products</span>
+      </Link>
+    </li>
+  </ul>
+</div>
+
 
         <Link to="/" className="navbar-brand fw-bold fs-4 mt-2 shadow-sm">
           <img src={logo} alt="logo" style={{borderRadius: "5px"}} />

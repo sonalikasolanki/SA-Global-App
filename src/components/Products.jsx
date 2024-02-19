@@ -58,7 +58,8 @@ const Products = () => {
     return (
       <>
         <div style={{ width: "100%" }}>
-          <div className="buttons d-flex justify-content-center text-white product_bar " style={{ marginTop: "150px" }}>
+          
+          <div className="buttons d-flex justify-content-center text-white product_bar " style={{ marginTop: "170px" }}>
             <button className="btn me-2" onClick={() => setFilter(data)} style={{ color: "white" }}>
               All
             </button>
