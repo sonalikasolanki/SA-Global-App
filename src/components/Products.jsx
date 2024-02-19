@@ -76,7 +76,7 @@ const Products = () => {
             </button>
           </div>
         </div>
-        <div className="product-container py-5">
+        <div className="product-container py-5 ">
           {filter.map((product) => (
 
             <div className="product-card">

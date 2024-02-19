@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/SA-Global-App/static/css/main.b8bd6245.css",
-    "main.js": "/SA-Global-App/static/js/main.4832ebc4.js",
+    "main.css": "/SA-Global-App/static/css/main.fe769d4d.css",
+    "main.js": "/SA-Global-App/static/js/main.40fb5ca4.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/SA-Global-App/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/banner.png": "/SA-Global-App/static/media/banner.6d8dc80319d92997c3ff.png",
     "static/media/fontawesome-webfont.eot": "/SA-Global-App/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
@@ -12,11 +12,11 @@
     "static/media/probar.png": "/SA-Global-App/static/media/probar.4cfdc041d659a8a2f5a6.png",
     "static/media/logo.png": "/SA-Global-App/static/media/logo.325a172f02ff163cd745.png",
     "index.html": "/SA-Global-App/index.html",
-    "main.b8bd6245.css.map": "/SA-Global-App/static/css/main.b8bd6245.css.map",
-    "main.4832ebc4.js.map": "/SA-Global-App/static/js/main.4832ebc4.js.map"
+    "main.fe769d4d.css.map": "/SA-Global-App/static/css/main.fe769d4d.css.map",
+    "main.40fb5ca4.js.map": "/SA-Global-App/static/js/main.40fb5ca4.js.map"
   },
   "entrypoints": [
-    "static/css/main.b8bd6245.css",
-    "static/js/main.4832ebc4.js"
+    "static/css/main.fe769d4d.css",
+    "static/js/main.40fb5ca4.js"
   ]
 }

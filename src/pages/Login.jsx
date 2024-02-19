@@ -16,7 +16,7 @@ const Login = () => {
 
   const onSubmit = (values) => {
     axios
-      .post("https://fakestoreapi.com/auth/login", values) 
+      .post("https://fakestoreapi.com/auth/login", values)
       .then(
         (response) => {
           alert("Login Successful");
@@ -37,8 +37,6 @@ const Login = () => {
     username: Yup.string().required("user name is required"),
     password: Yup.string().required("Password is required")
   });
-
- 
 
   const formik = useFormik({
     initialValues,
