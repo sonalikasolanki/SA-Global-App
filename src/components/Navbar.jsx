@@ -11,10 +11,10 @@ const Navbar = () => {
   let totalWishListQty = wishlist.wishListItems.length;
   return (
     <nav className="navbar navbar-expand-lg navbar-info py-3 shadow-sm fixed-top">
-      <div className="navbar-container">
+      <div className="navbar-container ">
         <div>
           <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-            <li className="nav-item">
+            <li className="nav-item ">
               <Link className="btn mt-2" aria-current="page" to="/">
                 <span style={{color: "white", fontWeight: "700"}}>Home</span>
               </Link>

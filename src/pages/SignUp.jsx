@@ -70,7 +70,7 @@ const SignUp = () => {
 
   return (
 
-    <div className="container" style={{marginTop: "150px", background: "#50616a", color: "white", padding: "50px" }}>
+    <div className="container py-5" style={{marginTop: "300px", background: "#50616a", color: "white", padding: "50px" }}>
       <div className="row">
         <div className="col-md-3"></div>
         <div className="col-md-6">

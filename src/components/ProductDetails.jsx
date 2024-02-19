@@ -42,7 +42,7 @@ const ProductDetails = () => {
   const ShowProduct = () => {
     return (
       <>
-        <div className="col-md-4" style={{ padding: "25px", height: "400px", background: "black", border: "5px groove #50616a", display: "flex" }}>
+         <div className="col-md-4" style={{ padding: "25px", height: "400px", background: "black", border: "5px groove #50616a", display: "flex" }}>
           <img src={product.image} alt={product.title} width="100%" style={{ borderRadius: "5px" }} />
         </div>
         <div className="col-md-6" style={{ display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
@@ -51,15 +51,15 @@ const ProductDetails = () => {
           <p>{product.description}</p>
           <h3 className="display-6 fw-bold my-4">Price: $ {product.price}</h3>
           <div>
-            <button className="btn btn-dark" style={{ width: "200px", float: "left" }} ref={cartBtnText} onClick={() => addProduct(product)} >
+            <button className="btn btn-dark" style={{ width: "200px", marginBottom: "10px" }} ref={cartBtnText} onClick={() => addProduct(product)} >
               {existInCart ? "Remove from Cart" : "Add to Cart"}
             </button>
             <NavLink to="/cart">
-              <button className="btn btn-dark" style={{ width: "200px",  float: "right" }}>Go to Cart</button>
+              <button className="btn btn-dark" style={{ width: "200px" }}>Go to Cart</button>
             </NavLink>
           </div>
         </div>
-      </>
+      </> 
     );
   };
 

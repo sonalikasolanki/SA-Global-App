@@ -54,46 +54,57 @@ const Cart = () => {
   const ShowCart = () => {
     return (
       <>
-        <div>
-          <div style={{ overflow: "auto" }}>
-            {cart.map((product) => (
-              <CartProducts key={product.id} data={product} />
-            ))}
-          </div>
-
-          <div
-            className="card"
-            style={{ background: "#dee3ea", padding: "25px", color: "black" }}
-          >
-            <div className="h2">
-              <legend>Cart Summary</legend>
+        <div className="row">
+          <div className="col-md-8">
+            <div style={{ overflow: "auto" }}>
+              {cart.map((product) => (
+                <CartProducts key={product.id} data={product} />
+              ))}
             </div>
+          </div>
+          <div className="col-md-4">
+            <div
+              className="card"
+              style={{
+                background: "#dee3ea",
+                padding: "25px",
+                color: "black",
+              }}
+            >
+              <div className="h2">
+                <legend>Cart Summary</legend>
+              </div>
 
-            <table class="table table-xxl table-dark table-borderless">
-              <tbody>
-                <tr>
-                  <th>Total</th>
-                  <td>${totalAmount.toFixed(2)}</td>
-                </tr>
-                <tr>
-                  <th>Shipping Charges</th>
-                  <td>${shippingCharges.toFixed(2)}</td>
-                </tr>
-                <tr>
-                  <th>Checkout Price</th>
-                  <td>${checkoutPrice.toFixed(2)}</td>
-                </tr>
-              </tbody>
-            </table>
+              <table className="table table-xxl table-dark table-borderless">
+                <tbody>
+                  <tr>
+                    <th>Total</th>
+                    <td>${totalAmount.toFixed(2)}</td>
+                  </tr>
+                  <tr>
+                    <th>Shipping Charges</th>
+                    <td>${shippingCharges.toFixed(2)}</td>
+                  </tr>
+                  <tr>
+                    <th>Checkout Price</th>
+                    <td>${checkoutPrice.toFixed(2)}</td>
+                  </tr>
+                </tbody>
+              </table>
 
-            <div>
-              <button
-                className="btn btn-dark"
-                style={{ color: "white", padding: "10px 20px", width: "100%" }}
-                onClick={() => handleCheckout()}
-              >
-                Proceed to Checkout
-              </button>
+              <div>
+                <button
+                  className="btn btn-dark"
+                  style={{
+                    color: "white",
+                    padding: "10px 20px",
+                    width: "100%",
+                  }}
+                  onClick={() => handleCheckout()}
+                >
+                  Proceed to Checkout
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -103,7 +114,9 @@ const Cart = () => {
 
   return (
     <div>
-      <div className="container width-50 py-4" style={{ marginTop: "100px" }}>
+      <div
+        className="container py-5" style={{marginTop: "150px"}}
+      >
         <div className="row py-4">
           {cart.length ? <ShowCart /> : <EmptyCart />}
         </div>
@@ -112,6 +125,5 @@ const Cart = () => {
   );
 };
 
-
-
 export default Cart;
+

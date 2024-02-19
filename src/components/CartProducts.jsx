@@ -11,9 +11,9 @@ function CartProducts(props) {
 
   const handleQtyDecrement = () => {
     dispatch(removeFromCart(props.data));
-    //If the last quantity is going tobe removed
+    // If the last quantity is going to be removed
     if (product[0].itemQuantity === 1) {
-      alert(title + "removed to the cart");
+      alert(title + " removed from the cart");
     }
   };
 
@@ -23,18 +23,20 @@ function CartProducts(props) {
 
   return (
     <>
-      <div className="px-4 my-3 rounded-2 py-3" style={{ background: "#50616a", color: "white" }} >
-        <div style={{ display: "flex", padding: "25px" }}>
-          <div style={{ width: "50%", height: "450px", display: "flex", flexDirection: "column", justifyContent: "space-between", padding: "25px" }}>
-            <small>Category: <span className="text-uppercase">{category}</span></small>
-            <h1>{title}</h1>
-            <small style={{textAlign: "justify"}}>{description}</small>
+      <div className="px-4 my-3 rounded-2 py-3" style={{ background: "#50616a", color: "white" }}>
+        <div className="d-flex flex-column-reverse flex-lg-row justify-content-between align-items-stretch align-items-lg-start">
+          <div className="d-flex flex-column justify-content-between px-3 pb-lg-0" style={{ maxWidth: "50%" }}>
+            <div>
+              <h1>{title}</h1>
+              <small>Category: <span className="text-uppercase">{category}</span></small>
+              <p className="text-justify">{description}</p>
+            </div>
             <div className="quantity-container" style={{ width: "120px", display: "flex", justifyContent: "space-around", alignItems: "center" }}>
-              <button className="btn btn-dark" onClick={handleQtyDecrement} >
+              <button className="btn btn-dark" onClick={handleQtyDecrement}>
                 <AiOutlineMinus />
               </button>
-              <div className="quantity-value ">{product[0].itemQuantity}</div>
-              <button className="btn btn-dark" onClick={handleQtyIncrement} >
+              <div className="quantity-value">{product[0].itemQuantity}</div>
+              <button className="btn btn-dark" onClick={handleQtyIncrement}>
                 <AiOutlinePlus />
               </button>
             </div>
@@ -42,12 +44,14 @@ function CartProducts(props) {
               <h4 className="display-6 fw-bold my-4">Price: ${price}</h4>
             </div>
           </div>
-          <div style={{ background: "#344349", padding: "25px", width: "50%", height: "450px", display: "flex", justifyContent: "center" }}>
-            <img src={image} alt={title} width="100%" />
+          <div className="bg-dark" style={{ width: "100%", height: "300px" }}>
+            <img src={image} alt={title} className="w-100 h-100" />
           </div>
         </div>
       </div>
     </>
   );
 }
+
 export default CartProducts;
+
